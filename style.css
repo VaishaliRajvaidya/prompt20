@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #3f3e3e;
+    padding: 20px 0;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+header h1{
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+/* main */
+.main {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 300px;
+    text-wrap: nowrap;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-top: 280px;
+}
+
+.overlay button {
+    background-color: #1a1817;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.main>video{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    
+
+
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 19, 19, 0.404);
+    position: relative;
+}
+.overlay>h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900 ;
+}
